@@ -10,7 +10,7 @@ List branches = new JsonSlurper().parse(branchUrl.newReader())
 listView("Stefano's Jobs DSL") {
     description("DSL generated view for Stefano's jobs")
     jobs {
-        branches.each { branch -> name("Stefano Masini numerals DSL / ${branch.name}") }
+        branches.each { branch -> name("Stefano Masini numerals DSL - ${branch.name}") }
     }
     columns {
         status()
@@ -25,7 +25,7 @@ listView("Stefano's Jobs DSL") {
 
 
 branches.each { branch ->
-    job("Stefano Masini numerals DSL / ${branch.name}") {
+    job("Stefano Masini numerals DSL - ${branch.name}") {
         scm {
             github repo, branch.name
         }

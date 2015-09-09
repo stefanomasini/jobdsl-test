@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8e84cb72-a3f4-48eb-8cac-613263cd6915" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.groovy" afterPath="$PROJECT_DIR$/config.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jobdsl.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/config.groovy">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.2549575">
-              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+              <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -211,7 +212,7 @@
       <created>1441794211936</created>
       <option name="number" value="Default" />
       <updated>1441794211936</updated>
-      <workItem from="1441794213321" duration="421000" />
+      <workItem from="1441794213321" duration="556000" />
     </task>
     <task id="LOCAL-00001" summary="branches">
       <created>1441794399301</created>
@@ -219,11 +220,17 @@
       <option name="project" value="LOCAL" />
       <updated>1441794399301</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="bugfix">
+      <created>1441794727565</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1441794727565</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="421000" />
+    <option name="totallyTimeSpent" value="556000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="12" y="23" width="1383" height="877" extended-state="0" />
@@ -260,7 +267,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="branches" />
-    <option name="LAST_COMMIT_MESSAGE" value="branches" />
+    <MESSAGE value="bugfix" />
+    <option name="LAST_COMMIT_MESSAGE" value="bugfix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -270,7 +278,7 @@
     <entry file="file://$PROJECT_DIR$/config.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2549575">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+          <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
           <folding />
         </state>
       </provider>
