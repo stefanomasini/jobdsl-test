@@ -25,9 +25,7 @@ listView("Stefano's Jobs DSL") {
 
 
 branches.each { branch ->
-    String jobName =
-    jobNames.add("Stefano Masini numerals DSL / ${branch.name}")
-    job(jobName) {
+    job("Stefano Masini numerals DSL / ${branch.name}") {
         scm {
             github repo, branch.name
         }
