@@ -7,11 +7,26 @@ URL branchUrl = "https://api.github.com/repos/$repo/branches".toURL()
 List branches = new JsonSlurper().parse(branchUrl.newReader())
 
 
-def jobNames = []
+listView("Stefano's Jobs DSL") {
+    description("DSL generated view for Stefano's jobs")
+    jobs {
+        branches.each { name("Stefano Masini numerals DSL / ${branch.name}") }
+    }
+    columns {
+        status()
+        weather()
+        name()
+        lastSuccess()
+        lastFailure()
+        lastDuration()
+        buildButton()
+    }
+}
+
 
 branches.each { branch ->
-    String jobName = "Stefano Masini numerals DSL / ${branch.name}"
-    jobNames.add(jobName)
+    String jobName =
+    jobNames.add("Stefano Masini numerals DSL / ${branch.name}")
     job(jobName) {
         scm {
             github repo, branch.name
@@ -24,18 +39,3 @@ branches.each { branch ->
 }
 
 
-listView("Stefano's Jobs DSL") {
-    description("DSL generated view for Stefano's jobs")
-    jobs {
-        jobNames.each { name(it) }
-    }
-    columns {
-        status()
-        weather()
-        name()
-        lastSuccess()
-        lastFailure()
-        lastDuration()
-        buildButton()
-    }
-}
